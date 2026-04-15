@@ -1,0 +1,10 @@
+{ movieNumber === 1 && <MovieCard movie={{title: "Tim's Film", release_date: "2024" , url: ""}} /> }
+{/* <MovieCard movie={{title: "Joe's Film", release_date: "2022" , url: ""}} /> */}
+
+
+
+
+this shows some movie cards just with the first letter of the searchbar
+    {movies.map((movie) => ( 
+           movie.title.toLowerCase().startsWith(searchQuery) && <MovieCard movie={movie} key={movie.id} />
+    ))}
