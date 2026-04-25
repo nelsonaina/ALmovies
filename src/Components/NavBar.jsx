@@ -15,6 +15,9 @@ function NavBar() {
                 <Link to="/favorites" className="nav-link">
                     Favorites
                 </Link>
+                <Link to="/About" className="nav-link">
+                    About
+                </Link>
             </div>
         </nav>
     );
