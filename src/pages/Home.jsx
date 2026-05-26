@@ -10,6 +10,13 @@ function Home() {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+
     useEffect(() => {
         const loadPopularMovies = async () => {
             try {
@@ -72,7 +79,13 @@ function Home() {
                     ))}
                 </div>
             )}
+
+            <button onClick={() => scrollToTop()}>
+                Scroll
+            </button>
         </div>
+        
+        
     );
 }
 
