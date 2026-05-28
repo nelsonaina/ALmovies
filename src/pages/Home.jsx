@@ -81,7 +81,7 @@ function Home() {
             )}
 
             <button onClick={() => scrollToTop()}>
-                Scroll
+                Scroll to top
             </button>
         </div>
         
